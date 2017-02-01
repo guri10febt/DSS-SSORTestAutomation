@@ -5,7 +5,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 import com.dss.test.coreutilities.Log;
-// Testing the new conflict
+//Testing New Branch
 public class Config {
 	public WebDriver driver;
 	
