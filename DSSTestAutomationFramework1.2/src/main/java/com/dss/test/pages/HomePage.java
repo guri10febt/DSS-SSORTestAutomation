@@ -9,7 +9,7 @@ import org.openqa.selenium.support.PageFactory;
 import com.dss.test.coreutilities.CoreUtility;
 import com.dss.test.coreutilities.Log;
 import com.dss.test.pageobject.HomePageObject;
-
+//Homepage methods
 public class HomePage {
 
 	private WebDriver driver;
