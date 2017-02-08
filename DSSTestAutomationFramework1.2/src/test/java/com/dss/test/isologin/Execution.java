@@ -20,6 +20,7 @@ import com.dss.test.coreutilities.CoreUtility;
 import com.dss.test.coreutilities.Log;
 import com.dss.test.flows.ISOLoginFlows;
 import com.dss.test.pageobject.HomePageObject;
+import com.dss.test.pages.P2PPage;
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
@@ -33,16 +34,15 @@ public class Execution {
 	private ExtentReports report;
 	private ExtentTest logger;
 	
-	@Parameters({"browser","platform"})
+	@Parameters({"Url","browser","platform"})
 	@BeforeTest
-	public void setup(String browser, String platform) {
-		
-		driver = new Config().selectBrowser(browser, platform);
+	public void setup(String Url, String browser, String platform) throws InterruptedException {
+		P2PPage.deleteEmailIDFromP2P("guri10febf@gmail.com");
+		driver=new Config().selectBrowser(browser, platform);
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-		driver.get("http://nguxbeta:nguxtr!b@ngux.latimes.stage.tribdev.com");
+		driver.get(Url);
 		CoreUtility.handleAlert(driver, "accept");
-		
 		isoLoginFlow = new ISOLoginFlows(driver);
 		AppUtility.closeAds(HomePageObject.btn_AdClose, driver);
 		report = new ExtentReports(System.getProperty("user.dir")+"\\AutomationReport.html");

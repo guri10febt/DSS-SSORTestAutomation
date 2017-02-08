@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+
+	<suite-files>
+	<suite-file path = "/MarketXml/LATimesStage.xml" />
+	
+	<!--  
+	<suite-file path = "/MarketXml/CourantStage.xml" />
+	<suite-file path = "/MarketXml/ChicagotribuneStage.xml" />
+	<suite-file path = "/MarketXml/DailyPressStage.xml" />
+	<suite-file path = "/MarketXml/McallStage.xml" />
+	<suite-file path = "/MarketXml/OrlandoSentinelStage.xml" />
+	<suite-file path = "/MarketXml/SunSentinelStage.xml" />
+	<suite-file path = "/MarketXml/BaltimoresunStage.xml" /> -->
+	</suite-files>
+</suite>

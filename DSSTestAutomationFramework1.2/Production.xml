@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Production">
+	<parameter name="env" value="prod"></parameter>
+	<suite-files>
+	<suite-file path = "/MarketXml/LATimesProd.xml" />
+	<suite-file path = "/MarketXml/ChicagotribuneProd.xml" />
+	<suite-file path = "/MarketXml/CourantProd.xml" />
+	<suite-file path = "/MarketXml/DailyPressProd.xml" />
+	<suite-file path = "/MarketXml/McallProd.xml" />
+	<suite-file path = "/MarketXml/OrlandoSentinelProd.xml" />
+	<suite-file path = "/MarketXml/SunSentinelProd.xml" />
+	<suite-file path = "/MarketXml/BaltimoresunProd.xml" />
+	</suite-files>
+</suite>
